@@ -1,8 +1,10 @@
 <link rel="stylesheet" href="/Program2/css/style.css">
+
 <h1>Games</h1>
 <?php
 if ($aantalRijen > 0) { ?>
     <ul>
+        <a href="views/agenda_toevoegen_view.php">toevoegen</a>
         <?php foreach ($resultaten as $rij) { ?>
             <a href="agenda_detail_view.php?ID=<?=$rij['ID']?>">Details</a>
         <li>
